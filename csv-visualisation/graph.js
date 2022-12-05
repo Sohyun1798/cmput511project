@@ -19,18 +19,16 @@ function setup() {
     const size = map(exam_score, 0, 100, 0, 100);
     const fillColor = map(pass_rate, 0, 100, 255, 0);
 
-    console.log(width)
-
-    if (x==1){
-      x = 10 * (1/width);
+    if (x == 1){
+      var x_c = width - 100;
     }
 
     if (x==0){
-      x = 1/width;
+      var x_c = 100;
     }
 
     fill(fillColor, 50, 50);
-    circle(x, y, size);
+    circle(x_c, y, size);
     fill(0);
     text(name, x, y + size / 2 + 5);
   }
