@@ -30,7 +30,7 @@ function setup() {
     fill(fillColor, 50, 50);
     circle(x_c, y, size);
     fill(0);
-    text(name, x, y + size / 2 + 5);
+    text(name, x_c, y + size / 2 + 5);
   }
 }
 
