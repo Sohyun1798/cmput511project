@@ -15,11 +15,20 @@ function setup() {
     const pass_rate = table.getNum(r, "pass_rate");
     const exam_score = table.getNum(r, "exam_score");
     const x = table.getNum(r, "prediction");
-    const y = random(0, height)
+    const y = random(0, height);
     const size = map(exam_score, 0, 100, 0, 100);
-    const fillColor = map(pass_rate, 0, 20, 255, 0);
+    const fillColor = map(pass_rate, 0, 100, 255, 0);
+
+    if (x == 1){
+      x = width - 100;
+    }
+
+    if (x==0){
+      x = 100;
+    }
+
     fill(fillColor, 50, 50);
-    circle(x/2, y, size);
+    circle(x, y, size);
     fill(0);
     text(name, x, y + size / 2 + 5);
   }
