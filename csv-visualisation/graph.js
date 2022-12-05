@@ -20,7 +20,7 @@ function setup() {
     const fillColor = map(pass_rate, 0, 100, 255, 0);
 
     if (x==1){
-      var rand_value = random(100, 200);
+      var rand_value = random(100, 300);
       var x_c = width - rand_value;
     }
 
