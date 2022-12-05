@@ -14,8 +14,8 @@ function setup() {
     const name = table.getString(r, "class");
     const pass_rate = table.getNum(r, "pass_rate");
     const exam_score = table.getNum(r, "exam_score");
-    const x = random(0, width);
-    const y = random(0, height);
+    const x = 0;
+    const y = 0;
     const size = map(exam_score, 0, 100, 0, 100);
     const fillColor = map(pass_rate, 0, 20, 255, 0);
     fill(fillColor, 50, 50);
