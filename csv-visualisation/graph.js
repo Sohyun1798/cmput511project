@@ -15,7 +15,7 @@ function setup() {
     const pass_rate = table.getNum(r, "pass_rate");
     const exam_score = table.getNum(r, "exam_score");
     const x = table.getNum(r, "prediction");
-    const y = random(0, height);
+    const y = height;
     const size = map(exam_score, 0, 100, 0, 100);
     const fillColor = map(pass_rate, 0, 0, 0, 0);
     fill(fillColor, 50, 50);
