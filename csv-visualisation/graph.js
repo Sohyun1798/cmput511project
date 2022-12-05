@@ -19,6 +19,8 @@ function setup() {
     const size = map(exam_score, 0, 100, 0, 100);
     const fillColor = map(pass_rate, 0, 100, 255, 0);
 
+    console.log(width)
+
     if (x == 1){
       x = width - 100;
     }
