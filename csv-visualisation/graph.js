@@ -21,12 +21,12 @@ function setup() {
 
     console.log(width)
 
-    if (x == 1){
-      x = width - 100;
+    if (x==1){
+      x = 10 * (1/width);
     }
 
     if (x==0){
-      x = 100;
+      x = 1/width;
     }
 
     fill(fillColor, 50, 50);
