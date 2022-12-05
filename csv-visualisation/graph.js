@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(800, 800);
   background(220);
 
   console.log(table);
@@ -17,7 +17,7 @@ function setup() {
     const x = table.getNum(r, "prediction");
     const y = random(0, height)
     const size = map(exam_score, 0, 100, 0, 100);
-    const fillColor = map(pass_rate, 0, 100, 255, 0);
+    const fillColor = map(pass_rate, 0, 20, 255, 0);
     fill(fillColor, 50, 50);
     circle(x/2, y, size);
     fill(0);
