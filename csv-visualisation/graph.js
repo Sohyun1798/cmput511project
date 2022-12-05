@@ -16,8 +16,8 @@ function setup() {
     const exam_score = table.getNum(r, "exam_score");
     const x = random(0, width);
     const y = random(0, height);
-    const size = map(pass_rate, 0, 280, 0, 100);
-    const fillColor = map(exam_score, 0, 130, 255, 0);
+    const size = map(exam_score, 0, 100, 0, 100);
+    const fillColor = map(pass_rate, 0, 130, 255, 0);
     fill(fillColor, 50, 50);
     circle(x, y, size);
     fill(0);
