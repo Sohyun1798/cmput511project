@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(800, 600);
   background(220);
 
   console.log(table);
