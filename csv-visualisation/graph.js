@@ -14,10 +14,10 @@ function setup() {
     const name = table.getString(r, "class");
     const pass_rate = table.getNum(r, "pass_rate");
     const exam_score = table.getNum(r, "exam_score");
-    const x = random(0, width);
+    const x = table.getNum(r, "prediction");
     const y = random(0, height);
     const size = map(exam_score, 0, 100, 0, 100);
-    const fillColor = map(pass_rate, 0, 100, 255, 0);
+    const fillColor = map(pass_rate, 0, 20, 100, 0);
     fill(fillColor, 50, 50);
     circle(x, y, size);
     fill(0);
