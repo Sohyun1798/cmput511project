@@ -12,12 +12,12 @@ function setup() {
   textAlign(CENTER, TOP);
   for (let r = 0; r < table.getRowCount(); r++) {
     const name = table.getString(r, "class");
-    const serving = table.getNum(r, "Serving");
+    const pass_rate = table.getNum(r, "pass_rate");
     const exam_score = table.getNum(r, "exam_score");
     const x = random(0, width);
     const y = random(0, height);
-    const size = map(serving, 0, 280, 0, 100);
-    const fillColor = map(exam_score, 0, 26, 100, 0);
+    const size = map(pass_rate, 0, 280, 0, 100);
+    const fillColor = map(exam_score, 0, 130, 255, 0);
     fill(fillColor, 50, 50);
     circle(x, y, size);
     fill(0);
