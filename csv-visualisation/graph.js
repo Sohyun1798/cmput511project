@@ -19,12 +19,14 @@ function setup() {
     const size = map(exam_score, 0, 100, 0, 100);
     const fillColor = map(pass_rate, 0, 100, 255, 0);
 
-    if (x == 1){
-      var x_c = width - 100;
+    if (x==1){
+      var rand_value = random(0, 100);
+      var x_c = width - rand_value;
     }
 
     if (x==0){
-      var x_c = 100;
+      var rand_value = random(0, 100);
+      var x_c = rand_value;
     }
 
     fill(fillColor, 50, 50);
