@@ -19,7 +19,7 @@ function setup() {
     const size = map(exam_score, 0, 100, 0, 100);
     const fillColor = map(pass_rate, 0, 0, 255, 0);
     fill(fillColor, 50, 50);
-    circle(x/width, y, size);
+    circle(x, y, size);
     fill(0);
     text(name, x, y + size / 2 + 5);
   }
